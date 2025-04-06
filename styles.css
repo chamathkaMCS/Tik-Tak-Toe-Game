@@ -1,0 +1,110 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(66, 66, 66, 0.226);
+    box-shadow: 0px 0px 15px rgba(46, 46, 46, 0.801);
+    width: 550px;
+    border-radius: 10px;
+}
+h1{
+    color: rgb(50, 35, 77);
+    font-family: "Permenent Marker",cursive;
+    font-size: 3rem;
+}
+.cellContainer{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows:  repeat(3,100px);
+    border: solid 2px black;
+    margin: 10px auto;
+}
+.cell{
+    border: solid 2px black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Permenent Marker",cursive;
+    color: rgb(75, 39, 39);
+}
+#statusContainer{
+    margin: auto;
+    font-family: "Permenent Marker",cursive;
+    font-size: 2rem;
+}
+#restartBtn{
+    margin: 20px auto;
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: hsl(209, 38%, 25%,100%);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: "Permenent Marker",cursive;
+    font-size: 180%;
+}
+#restartBtn:hover{
+        background-color: hsla(209, 38%, 25%, 70%);
+
+}
+#restartBtn:active{
+        background-color: hsla(209, 74%, 9%, 0.7);
+        color: rgb(255, 255, 255);
+
+}
+.winner{
+    position: absolute;
+    border-radius:5px;
+    background-color: red;
+    display: none;
+}
+.hori{
+    height: 10px;
+    width: 290px;
+    left: 5px;
+}
+.vert{
+    height: 290px;
+    width: 10px;
+    top:5px;
+}
+.diag{
+    height: 390px;
+    width: 10px;
+    left: 150px;
+}
+._1{
+    top:45px;/* this attribute change by js*/
+}
+._2{
+    top:145px;/* this attribute change by js*/
+}
+._3{
+    top:245px;/* this attribute change by js*/
+}
+._4{
+    left: 45px;  /* this attribute change by js*/
+}
+._5{
+    left:145px;  /* this attribute change by js*/
+}
+._6{
+    left: 245px;  /* this attribute change by js*/
+}
+._7{
+    top: -40px;   /* this attribute change by js*/
+    rotate: -45deg; /* this attribute change by js*/
+}
+._8{
+    top: -45px;   /* this attribute change by js*/
+    rotate: 45deg; /* this attribute change by js*/
+}
